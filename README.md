@@ -8,5 +8,4 @@ All notebooks were developed under Anaconda 4.9.2.
 
 Required packages are 
 
-conda install numpy pandas seaborn scipy JupyterLab
-conda install -c anaconda scikit-learn
+conda install numpy pandas seaborn scipy scikit-learn JupyterLab
