@@ -9,4 +9,5 @@ All notebooks were developed under Anaconda 4.9.2.
 Required packages are 
 
 conda install numpy pandas seaborn scipy scikit-learn JupyterLab statsmodels
-conda install -c conda-forge lifelines
+
+conda install -c conda-forge lifelines xgboost lightgbm
