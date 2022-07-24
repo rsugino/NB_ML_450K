@@ -13,3 +13,11 @@ conda install numpy pandas seaborn scipy scikit-learn JupyterLab statsmodels
 conda install -c conda-forge lifelines xgboost lightgbm
 
 git clone https://github.com/tctianchi/pyvenn.git
+
+
+# Files
+
+- data
+- ipynb jupyter-noteboook files are located
+-- make_450K_data.ipynb merge and separate beta-values matrix file
+
