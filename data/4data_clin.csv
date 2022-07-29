@@ -1,0 +1,494 @@
+ID,class,dataset,stage,MYCN,event/not,relapse/otherevent/not,alive/death,Event_Free_Survival_Time_in_Days,Overall_Survival_Time_in_Days,FirstEvent
+TARGET-30-PAIFXV-01A-01D,4Noamp,Target,4,N,Event,Event,D,630.0,1114.0,death of disease
+TARGET-30-PAIPGU-01A-01D,4Noamp,Target,4,N,Event,Death,D,436.0,436.0,death of disease
+TARGET-30-PAISNS-01A-01D,4Noamp,Target,4,N,Event,Event,D,410.0,421.0,death of disease
+TARGET-30-PAITCI-01A-01D,4Noamp,Target,4,N,Event,Event,D,232.0,324.0,death of disease
+TARGET-30-PAIVHE-01A-01D,4Noamp,Target,4,N,Event,Event,D,672.0,1605.0,death of disease
+TARGET-30-PAIVMJ-01A-01D,other,Target,1,N,Not,Censored,A,2359.0,2359.0,no event
+TARGET-30-PAIVZR-01A-01D,4Amp,Target,4,Y,Event,Death,D,787.0,787.0,death of disease
+TARGET-30-PAIXFZ-01A-01D,4s,Target,4s,N,Not,Censored,A,1955.0,1955.0,no event
+TARGET-30-PAKGCI-01A-01D,other,Target,1,N,Not,Censored,A,3723.0,3723.0,no event
+TARGET-30-PAKHAV-01A-01D,other,Target,1,N,Not,Censored,A,1659.0,1659.0,no event
+TARGET-30-PAKINP-01A-01D,other,Target,1,N,Not,Censored,A,3672.0,3672.0,no event
+TARGET-30-PAKYZS-01A-01D,4Noamp,Target,4,N,Event,Progression,A,238.0,3587.0,relapse/progression
+TARGET-30-PAKZRH-01A-01D,4s,Target,4s,N,Not,Censored,A,3341.0,3341.0,no event
+TARGET-30-PALBFW-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,611.0,1073.0,relapse/progression
+TARGET-30-PALCBW-01A-01D,4Noamp,Target,4,N,Not,Censored,A,4565.0,4565.0,no event
+TARGET-30-PALEAC-01A-01D,other,Target,1,N,Not,Censored,A,4263.0,4263.0,no event
+TARGET-30-PALETP-01A-01D,4Noamp,Target,4,N,Event,Death,D,251.0,251.0,death of disease
+TARGET-30-PALEVG-01A-01D,4Amp,Target,4,Y,Not,Censored,A,4948.0,4948.0,no event
+TARGET-30-PALFSE-01A-01D,other,Target,1,N,Not,Censored,A,2873.0,2873.0,no event
+TARGET-30-PALHVD-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,347.0,433.0,relapse/progression
+TARGET-30-PALIIN-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,684.0,1395.0,relapse/progression
+TARGET-30-PALKKV-01A-01D,other,Target,1,N,Not,Censored,A,2613.0,2613.0,no event
+TARGET-30-PALKXJ-01A-01D,4s,Target,4s,N,Not,Censored,A,637.0,637.0,no event
+TARGET-30-PALLJJ-01A-01D,other,Target,1,N,Not,Censored,A,3355.0,3355.0,no event
+TARGET-30-PALNVP-01A-01D,4Noamp,Target,4,N,Not,Censored,A,4665.0,4665.0,no event
+TARGET-30-PALRIA-01A-01D,other,Target,1,N,Not,Censored,A,4080.0,4080.0,no event
+TARGET-30-PALSAE-01A-01D,4Noamp,Target,4,N,Event,Progression,D,598.0,656.0,relapse/progression
+TARGET-30-PALUDH-01A-01D,4Noamp,Target,4,N,Not,Censored,A,4306.0,4306.0,no event
+TARGET-30-PALVUC-01A-01D,other,Target,1,N,Not,Censored,A,4368.0,4368.0,no event
+TARGET-30-PALVVH-01A-01D,other,Target,1,N,Not,Censored,A,2183.0,2183.0,no event
+TARGET-30-PALXTB-01A-01D,4Noamp,Target,4,N,Not,Censored,A,4621.0,4621.0,no event
+TARGET-30-PALZRG-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,422.0,580.0,relapse/progression
+TARGET-30-PALZZV-01A-01D,4Amp,Target,4,Y,Event,Event,A,1494.0,1934.0,relapse/progression
+TARGET-30-PAMAFV-01A-01D,other,Target,1,N,Not,Censored,A,4067.0,4067.0,no event
+TARGET-30-PAMCXF-01A-01D,4Amp,Target,4,Y,Event,Progression,D,376.0,718.0,relapse/progression
+TARGET-30-PAMLNB-01A-01D,other,Target,1,N,Not,Censored,A,1880.0,1880.0,no event
+TARGET-30-PAMMXF-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,140.0,197.0,relapse/progression
+TARGET-30-PAMNLH-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,361.0,837.0,relapse/progression
+TARGET-30-PAMYCE-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,392.0,995.0,relapse/progression
+TARGET-30-PAMZGT-01A-01D,4Amp,Target,4,Y,Event,Relapse,A,603.0,3823.0,relapse/progression
+TARGET-30-PAMZMG-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,533.0,763.0,relapse/progression
+TARGET-30-PAMZMJ-01A-01D,other,Target,1,N,Not,Censored,A,2241.0,2241.0,no event
+TARGET-30-PAMZSH-01A-01D,other,Target,1,N,Not,Censored,A,3334.0,3334.0,no event
+TARGET-30-PANBMJ-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,577.0,3776.0,relapse/progression
+TARGET-30-PANBSP-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,470.0,659.0,relapse/progression
+TARGET-30-PANKFE-01A-01D,4Noamp,Target,4,N,Not,Censored,A,402.0,402.0,no event
+TARGET-30-PANLET-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,830.0,1212.0,relapse/progression
+TARGET-30-PANNMS-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3509.0,3509.0,no event
+TARGET-30-PANRHJ-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,363.0,416.0,relapse/progression
+TARGET-30-PANRRW-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,408.0,2178.0,relapse/progression
+TARGET-30-PANRVJ-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3722.0,3722.0,no event
+TARGET-30-PANUIF-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3726.0,3726.0,no event
+TARGET-30-PANUKV-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,356.0,404.0,relapse/progression
+TARGET-30-PANWRR-01A-01D,4Noamp,Target,4,N,Event,Progression,D,267.0,345.0,relapse/progression
+TARGET-30-PANXJL-01A-01D,4Noamp,Target,4,N,Not,Censored,A,431.0,431.0,no event
+TARGET-30-PANYGR-01A-01D,4Noamp,Target,4,N,Event,Progression,D,281.0,283.0,relapse/progression
+TARGET-30-PANZPV-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,1013.0,1261.0,relapse/progression
+TARGET-30-PANZVU-01A-01D,4Noamp,Target,4,N,Event,Death,D,934.0,934.0,death of disease
+TARGET-30-PAPBGH-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,470.0,723.0,relapse/progression
+TARGET-30-PAPBJE-01A-01D,4Amp,Target,4,Y,Not,Censored,A,3467.0,3467.0,no event
+TARGET-30-PAPBZI-01A-01D,4Noamp,Target,4,N,Event,Progression,D,172.0,430.0,relapse/progression
+TARGET-30-PAPCTS-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,2236.0,2636.0,relapse/progression
+TARGET-30-PAPEAV-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3462.0,3462.0,no event
+TARGET-30-PAPEFE-01A-01D,4Amp,Target,4,Y,Event,Progression,D,138.0,150.0,relapse/progression
+TARGET-30-PAPHPE-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,453.0,470.0,relapse/progression
+TARGET-30-PAPICY-01A-01D,4s,Target,4s,N,Not,Censored,A,205.0,205.0,no event
+TARGET-30-PAPKWN-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,260.0,465.0,relapse/progression
+TARGET-30-PAPKXS-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,978.0,2384.0,relapse/progression
+TARGET-30-PAPRXW-01A-01D,4Amp,Target,4,Y,Not,Censored,A,3187.0,3187.0,no event
+TARGET-30-PAPSEI-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,1710.0,2056.0,relapse/progression
+TARGET-30-PAPSKM-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,573.0,1019.0,relapse/progression
+TARGET-30-PAPTAN-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2054.0,2054.0,no event
+TARGET-30-PAPTDH-01A-01D,4s,Target,4s,N,Event,Second Malignant Neoplasm,A,193.0,3264.0,relapse/progression
+TARGET-30-PAPTFZ-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,516.0,779.0,relapse/progression
+TARGET-30-PAPTIP-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,372.0,1492.0,relapse/progression
+TARGET-30-PAPTLA-01A-01D,4Noamp,Target,4,N,Event,Event,D,334.0,2220.0,death of disease
+TARGET-30-PAPTLD-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,617.0,2679.0,relapse/progression
+TARGET-30-PAPTLV-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,366.0,575.0,relapse/progression
+TARGET-30-PAPTLY-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2955.0,2955.0,no event
+TARGET-30-PAPTMM-01A-01D,4Amp,Target,4,Y,Not,Censored,A,3186.0,3186.0,no event
+TARGET-30-PAPUAR-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3065.0,3065.0,no event
+TARGET-30-PAPUJU-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3193.0,3193.0,no event
+TARGET-30-PAPUNH-01A-01D,other,Target,3,Y,Not,Censored,A,2958.0,2958.0,no event
+TARGET-30-PAPUTN-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,284.0,284.0,relapse/progression
+TARGET-30-PAPUWY-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,765.0,1102.0,relapse/progression
+TARGET-30-PAPVEB-01A-01D,other,Target,2b,N,Event,Relapse,D,263.0,1211.0,relapse/progression
+TARGET-30-PAPVFD-01A-01D,4Noamp,Target,4,N,Event,Death,D,1765.0,1765.0,death of disease
+TARGET-30-PAPVRN-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2889.0,2889.0,no event
+TARGET-30-PAPVXS-01A-01D,4Noamp,Target,4,N,Event,Death,D,224.0,224.0,death of disease
+TARGET-30-PAPWUC-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3186.0,3186.0,no event
+TARGET-30-PAPZFW-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3153.0,3153.0,no event
+TARGET-30-PAPZYP-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2386.0,2386.0,no event
+TARGET-30-PAPZYZ-01A-01D,4Amp,Target,4,Y,Not,Censored,A,1209.0,1209.0,no event
+TARGET-30-PARABN-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,607.0,827.0,relapse/progression
+TARGET-30-PARACM-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2994.0,2994.0,no event
+TARGET-30-PARACS-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1328.0,1328.0,no event
+TARGET-30-PARAHE-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,646.0,2232.0,relapse/progression
+TARGET-30-PARAMT-01A-01D,4Noamp,Target,4,N,Event,Death,D,493.0,493.0,death of disease
+TARGET-30-PARASL-01A-01D,4Noamp,Target,4,N,Event,Death,D,199.0,199.0,death of disease
+TARGET-30-PARBAJ-01A-01D,other,Target,3,N,Event,Relapse,A,302.0,3122.0,relapse/progression
+TARGET-30-PARBGP-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,1524.0,2039.0,relapse/progression
+TARGET-30-PARBLH-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3061.0,3061.0,no event
+TARGET-30-PARCET-01A-01D,4s,Target,4s,N,Not,Censored,A,2810.0,2810.0,no event
+TARGET-30-PARCWT-01A-01D,4Noamp,Target,4,N,Event,Event,D,968.0,2522.0,death of disease
+TARGET-30-PARDCK-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2991.0,2991.0,no event
+TARGET-30-PARDIW-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2829.0,2829.0,no event
+TARGET-30-PARDUJ-01A-01D,4Noamp,Target,4,N,Event,Progression,A,523.0,2757.0,relapse/progression
+TARGET-30-PARDVT-01A-01D,4Noamp,Target,4,N,Not,Censored,A,732.0,732.0,no event
+TARGET-30-PARDYU-01A-01D,4Amp,Target,4,Y,Event,Death,D,1116.0,1116.0,death of disease
+TARGET-30-PAREGK-01A-01D,4Noamp,Target,4,N,Not,Censored,A,3045.0,3045.0,no event
+TARGET-30-PARETE-01A-01D,4Amp,Target,4,Y,Event,Progression,D,241.0,261.0,relapse/progression
+TARGET-30-PARFRE-01A-01D,4s,Target,4s,N,Not,Censored,A,2451.0,2451.0,no event
+TARGET-30-PARFWB-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,1105.0,1836.0,relapse/progression
+TARGET-30-PARGDJ-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,386.0,781.0,relapse/progression
+TARGET-30-PARGKK-01A-01D,4Noamp,Target,4,N,Event,Progression,D,1075.0,1321.0,relapse/progression
+TARGET-30-PARGUX-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2744.0,2744.0,no event
+TARGET-30-PARHAM-01A-01D,4Noamp,Target,4,N,Event,Progression,D,38.0,2466.0,relapse/progression
+TARGET-30-PARHYL-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2739.0,2739.0,no event
+TARGET-30-PARIKF-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2810.0,2810.0,no event
+TARGET-30-PARIRD-01A-01D,4Amp,Target,4,Y,Event,Death,D,108.0,108.0,death of disease
+TARGET-30-PARJVP-01A-01D,4s,Target,4s,N,Not,Censored,A,2064.0,2064.0,no event
+TARGET-30-PARKGJ-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,841.0,1636.0,relapse/progression
+TARGET-30-PARMFA-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2855.0,2855.0,no event
+TARGET-30-PARMTT-01A-01D,4Noamp,Target,4,N,Event,Progression,D,291.0,1722.0,relapse/progression
+TARGET-30-PARNCW-01A-01D,4Noamp,Target,4,N,Event,Progression,D,606.0,972.0,relapse/progression
+TARGET-30-PARNEE-01A-01D,4Amp,Target,4,Y,Event,Death,D,318.0,318.0,death of disease
+TARGET-30-PARNNC-01A-01D,4s,Target,4s,N,Event,Relapse,A,735.0,2611.0,relapse/progression
+TARGET-30-PARNTS-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2062.0,2062.0,no event
+TARGET-30-PARRBU-01A-01D,4Amp,Target,4,Y,Event,Progression,D,415.0,907.0,relapse/progression
+TARGET-30-PARSBI-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,1377.0,1743.0,relapse/progression
+TARGET-30-PARSEA-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2642.0,2642.0,no event
+TARGET-30-PARSHT-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2711.0,2711.0,no event
+TARGET-30-PARSRJ-01A-01D,4Amp,Target,4,Y,Event,Relapse,A,1329.0,2597.0,relapse/progression
+TARGET-30-PARURB-01A-01D,4Noamp,Target,4,N,Event,Progression,D,365.0,724.0,relapse/progression
+TARGET-30-PARVLK-01A-01D,4Noamp,Target,4,N,Event,Event,D,428.0,875.0,death of disease
+TARGET-30-PARVME-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,1086.0,2573.0,relapse/progression
+TARGET-30-PARXLM-01A-01D,4Noamp,Target,4,N,Event,Progression,D,516.0,752.0,relapse/progression
+TARGET-30-PARYNK-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2351.0,2351.0,no event
+TARGET-30-PARZCJ-01A-01D,other,Target,3,N,Not,Censored,A,2435.0,2435.0,no event
+TARGET-30-PARZHA-01A-01D,4s,Target,4s,N,Not,Censored,A,2489.0,2489.0,no event
+TARGET-30-PARZIP-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,632.0,2511.0,relapse/progression
+TARGET-30-PASATK-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,441.0,1459.0,relapse/progression
+TARGET-30-PASAZJ-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2365.0,2365.0,no event
+TARGET-30-PASBEN-01A-01D,4Noamp,Target,4,N,Event,Death,D,1297.0,1297.0,death of disease
+TARGET-30-PASCFC-01A-01D,4s,Target,4s,N,Not,Censored,A,2522.0,2522.0,no event
+TARGET-30-PASCKI-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2556.0,2556.0,no event
+TARGET-30-PASCLP-01A-01D,4Amp,Target,4,Y,Event,Relapse,A,964.0,2268.0,relapse/progression
+TARGET-30-PASCTR-01A-01D,4s,Target,4s,N,Not,Censored,A,2325.0,2325.0,no event
+TARGET-30-PASCUF-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,610.0,833.0,relapse/progression
+TARGET-30-PASDZJ-01A-01D,4Amp,Target,4,Y,Event,Progression,D,282.0,330.0,relapse/progression
+TARGET-30-PASEGA-01A-01D,4Noamp,Target,4,N,Event,Progression,D,469.0,809.0,relapse/progression
+TARGET-30-PASFGG-01A-01D,4Noamp,Target,4,N,Event,Death,D,700.0,700.0,death of disease
+TARGET-30-PASFIC-01A-01D,4s,Target,4s,N,Not,Censored,A,2152.0,2152.0,no event
+TARGET-30-PASFRV-01A-01D,4Noamp,Target,4,N,Event,Progression,D,305.0,398.0,relapse/progression
+TARGET-30-PASGAP-01A-01D,4Noamp,Target,4,N,Event,Progression,D,1285.0,1543.0,relapse/progression
+TARGET-30-PASGPY-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,438.0,1438.0,relapse/progression
+TARGET-30-PASGUT-01A-01D,4Noamp,Target,4,N,Not,Censored,A,401.0,401.0,no event
+TARGET-30-PASHFA-01A-01D,other,Target,3,Y,Event,Progression,D,201.0,333.0,relapse/progression
+TARGET-30-PASJYB-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,455.0,682.0,relapse/progression
+TARGET-30-PASJZC-01A-01D,4s,Target,4s,Y,Event,Relapse,A,367.0,2083.0,relapse/progression
+TARGET-30-PASKJX-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,595.0,1682.0,relapse/progression
+TARGET-30-PASLGS-01A-01D,4Noamp,Target,4,N,Event,Event,D,546.0,830.0,death of disease
+TARGET-30-PASMDM-01A-01D,4s,Target,4s,N,Not,Censored,A,1324.0,1324.0,no event
+TARGET-30-PASMJG-01A-01D,4Noamp,Target,4,N,Event,Progression,D,1162.0,1544.0,relapse/progression
+TARGET-30-PASMNT-01A-01D,4Noamp,Target,4,N,Event,Progression,D,233.0,1696.0,relapse/progression
+TARGET-30-PASNEF-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2213.0,2213.0,no event
+TARGET-30-PASNML-01A-01D,4s,Target,4s,N,Not,Censored,A,2185.0,2185.0,no event
+TARGET-30-PASNPG-01A-01D,other,Target,3,N,Event,Event,A,302.0,2274.0,relapse/progression
+TARGET-30-PASNZU-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,954.0,1692.0,relapse/progression
+TARGET-30-PASPBZ-01A-01D,4s,Target,4s,N,Not,Censored,A,2347.0,2347.0,no event
+TARGET-30-PASPER-01A-01D,4Noamp,Target,4,N,Event,Progression,A,638.0,2087.0,relapse/progression
+TARGET-30-PASREY-01A-01D,4s,Target,4s,N,Not,Censored,A,2332.0,2332.0,no event
+TARGET-30-PASRFS-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,1675.0,2075.0,relapse/progression
+TARGET-30-PASSRN-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2227.0,2227.0,no event
+TARGET-30-PASSRS-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,861.0,1319.0,relapse/progression
+TARGET-30-PASSWW-01A-01D,4s,Target,4s,N,Not,Censored,A,2095.0,2095.0,no event
+TARGET-30-PASTCN-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,870.0,1033.0,relapse/progression
+TARGET-30-PASTKC-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1952.0,1952.0,no event
+TARGET-30-PASUCB-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1976.0,1976.0,no event
+TARGET-30-PASUML-01A-01D,4s,Target,4s,N,Event,Event,D,12.0,20.0,death of disease
+TARGET-30-PASUYG-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,505.0,2193.0,relapse/progression
+TARGET-30-PASVRU-01A-01D,4Amp,Target,4,Y,Event,Event,D,254.0,440.0,death of disease
+TARGET-30-PASWFB-01A-01D,4Amp,Target,4,Y,Event,Death,D,87.0,87.0,death of disease
+TARGET-30-PASWIJ-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1940.0,1940.0,no event
+TARGET-30-PASWVY-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1918.0,1918.0,no event
+TARGET-30-PASWYR-01A-01D,4Amp,Target,4,Y,Not,Censored,A,1893.0,1893.0,no event
+TARGET-30-PASXGP-01A-01D,4Noamp,Target,4,N,Not,Censored,A,1898.0,1898.0,no event
+TARGET-30-PASXHE-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2098.0,2098.0,no event
+TARGET-30-PASXIE-01A-01D,4Amp,Target,4,Y,Not,Censored,A,2123.0,2123.0,no event
+TARGET-30-PASXRG-01A-01D,4Amp,Target,4,Y,Not,Censored,A,1749.0,1749.0,no event
+TARGET-30-PASXRJ-01A-01D,4Noamp,Target,4,N,Event,Progression,A,266.0,1837.0,relapse/progression
+TARGET-30-PASYLD-01A-01D,4Noamp,Target,4,N,Event,Progression,D,188.0,276.0,relapse/progression
+TARGET-30-PASYPX-01A-01D,4Noamp,Target,4,N,Event,Progression,A,296.0,2215.0,relapse/progression
+TARGET-30-PASZKE-01A-01D,4s,Target,4s,N,Event,Death,D,8.0,8.0,death of disease
+TARGET-30-PATAYJ-01A-01D,4s,Target,4s,N,Not,Censored,A,1744.0,1744.0,no event
+TARGET-30-PATBMM-01A-01D,4Noamp,Target,4,N,Event,Relapse,A,709.0,768.0,relapse/progression
+TARGET-30-PATCFL-01A-01D,4Noamp,Target,4,N,Not,Censored,A,2125.0,2125.0,no event
+TARGET-30-PATDWN-01A-01D,4Amp,Target,4,Y,Not,Censored,A,278.0,278.0,no event
+TARGET-30-PATDXC-01A-01D,4Noamp,Target,4,N,Event,Event,D,444.0,916.0,death of disease
+TARGET-30-PATEPF-01A-01D,4Noamp,Target,4,N,Event,Death,D,304.0,304.0,death of disease
+TARGET-30-PATESI-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,622.0,958.0,relapse/progression
+TARGET-30-PATFCY-01A-01D,4Noamp,Target,4,N,Event,Death,D,787.0,787.0,death of disease
+TARGET-30-PATFXV-01A-01D,4Amp,Target,4,Y,Event,Progression,D,236.0,296.0,relapse/progression
+TARGET-30-PATGJU-01A-01D,4s,Target,4s,N,Not,Censored,A,1219.0,1219.0,no event
+TARGET-30-PATGLU-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,715.0,1330.0,relapse/progression
+TARGET-30-PATGWT-01A-01D,4Amp,Target,4,Y,Event,Relapse,D,727.0,928.0,relapse/progression
+TARGET-30-PATHKB-01A-01D,4s,Target,4s,N,Not,Censored,A,1998.0,1998.0,no event
+TARGET-30-PATHVK-01A-01D,4Noamp,Target,4,N,Event,Progression,A,171.0,1807.0,relapse/progression
+TARGET-30-PATNKP-01A-01D,4Noamp,Target,4,N,Event,Event,D,616.0,1549.0,death of disease
+TARGET-30-PATYIL-01A-01D,4Noamp,Target,4,N,Event,Relapse,D,239.0,481.0,relapse/progression
+TARGET-30-PAUDDK-01A-01D,other,Target,3,N,Event,Event,A,344.0,1528.0,relapse/progression
+GSM1896914,4Noamp,Henrich,4,N,Event,alive with event,A,493.0,4922.0,relapse/progression
+GSM1896915,4Noamp,Henrich,4,N,Not,alive without event,A,3208.0,3208.0,no event
+GSM1896916,other,Henrich,2.1,N,Not,alive without event,A,3984.0,3984.0,no event
+GSM1896917,4Noamp,Henrich,4,N,Not,alive without event,A,3958.0,3958.0,no event
+GSM1896918,other,Henrich,1,N,Not,alive without event,A,3013.0,3013.0,no event
+GSM1896919,4Amp,Henrich,4,Y,Not,alive without event,A,3238.0,3238.0,no event
+GSM1896920,other,Henrich,1,N,Not,alive without event,A,2499.0,2499.0,no event
+GSM1896922,4s,Henrich,4s,N,Not,alive without event,A,3024.0,3024.0,no event
+GSM1896923,4s,Henrich,4s,N,Not,alive without event,A,2588.0,2588.0,no event
+GSM1896924,4s,Henrich,4s,N,Event,alive with event,A,293.0,2807.0,relapse/progression
+GSM1896926,4Noamp,Henrich,4,N,Event,died from disease,D,518.0,602.0,death of disease
+GSM1896927,other,Henrich,1,N,Event,alive with event,A,33.0,3898.0,relapse/progression
+GSM1896928,4Noamp,Henrich,4,N,Event,died from disease,D,812.0,1454.0,death of disease
+GSM1896929,other,Henrich,3,N,Not,alive without event,A,3566.0,3566.0,no event
+GSM1896931,other,Henrich,2.2,N,Not,alive without event,A,3201.0,3201.0,no event
+GSM1896932,4Noamp,Henrich,4,N,Not,alive without event,A,2808.0,2808.0,no event
+GSM1896934,4Amp,Henrich,4,Y,Not,alive without event,A,2275.0,2275.0,no event
+GSM1896935,4s,Henrich,4s,N,Not,alive without event,A,2631.0,2631.0,no event
+GSM1896936,4Noamp,Henrich,4,N,Event,died from disease,D,705.0,3809.0,death of disease
+GSM1896937,4Noamp,Henrich,4,N,Event,died from disease,D,486.0,1293.0,death of disease
+GSM1896938,other,Henrich,3,Y,Not,alive without event,A,3526.0,3526.0,no event
+GSM1896939,4Amp,Henrich,4,Y,Not,alive without event,A,3570.0,3570.0,no event
+GSM1896940,4Noamp,Henrich,4,N,Event,alive with event,A,1399.0,3839.0,relapse/progression
+GSM1896941,4Noamp,Henrich,4,N,Event,alive with event,A,562.0,3566.0,relapse/progression
+GSM1896942,other,Henrich,2.2,N,Not,alive without event,A,2310.0,2310.0,no event
+GSM1896943,4Amp,Henrich,4,Y,Event,died from disease,D,443.0,784.0,death of disease
+GSM1896945,4Noamp,Henrich,4,N,Not,alive without event,A,2966.0,2966.0,no event
+GSM1896946,other,Henrich,2.1,N,Not,alive without event,A,2029.0,2029.0,no event
+GSM1896947,other,Henrich,1,N,Not,alive without event,A,2055.0,2055.0,no event
+GSM1896948,other,Henrich,1,N,Not,alive without event,A,2673.0,2673.0,no event
+GSM1896949,4s,Henrich,4s,N,Event,alive with event,A,1567.0,3303.0,relapse/progression
+GSM1896951,other,Henrich,1,N,Not,alive without event,A,2432.0,2432.0,no event
+GSM1896954,other,Henrich,3,N,Event,alive with event,A,1128.0,3561.0,relapse/progression
+GSM1896956,other,Henrich,2.2,N,Not,alive without event,A,3324.0,3324.0,no event
+GSM1896959,other,Henrich,1,N,Not,alive without event,A,2774.0,2774.0,no event
+GSM1896965,4Amp,Henrich,4,Y,Event,died from disease,D,433.0,711.0,death of disease
+GSM1896968,other,Henrich,3,N,Not,alive without event,A,2375.0,2375.0,no event
+GSM1896971,4Amp,Henrich,4,Y,Event,died from disease,D,441.0,478.0,death of disease
+GSM1896975,other,Henrich,2.1,N,Event,alive with event,A,70.0,2359.0,relapse/progression
+GSM1896978,other,Henrich,2.1,N,Not,alive without event,A,2458.0,2458.0,no event
+GSM1896980,4s,Henrich,4s,N,Not,alive without event,A,1393.0,1393.0,no event
+GSM1896983,other,Henrich,2.2,N,Not,alive without event,A,1995.0,1995.0,no event
+GSM1896985,other,Henrich,3,N,Event,alive with event,A,188.0,1911.0,relapse/progression
+GSM1896986,4Amp,Henrich,4,Y,Event,died from disease,D,431.0,454.0,death of disease
+GSM1896988,4Amp,Henrich,4,Y,Not,alive without event,A,1053.0,1053.0,no event
+GSM1896989,4Amp,Henrich,4,Y,Not,alive without event,A,851.0,851.0,no event
+GSM1896990,4Noamp,Henrich,4,N,Event,alive with event,A,499.0,834.0,relapse/progression
+GSM1896992,4s,Henrich,4s,N,Not,alive without event,A,2249.0,2249.0,no event
+GSM1896993,other,Henrich,1,N,Not,alive without event,A,2140.0,2140.0,no event
+GSM1896994,4Noamp,Henrich,4,N,Event,died from disease,D,615.0,1235.0,death of disease
+GSM1896995,other,Henrich,3,N,Event,alive with event,A,74.0,1896.0,relapse/progression
+GSM1896996,4Noamp,Henrich,4,N,Event,alive with event,A,1122.0,1645.0,relapse/progression
+GSM1896998,4Amp,Henrich,4,Y,Event,died from disease,D,738.0,892.0,death of disease
+GSM1896999,4Noamp,Henrich,4,N,Event,alive with event,A,691.0,1185.0,relapse/progression
+GSM1897001,4Amp,Henrich,4,Y,Not,alive without event,A,577.0,577.0,no event
+GSM1897003,4Amp,Henrich,4,Y,Not,alive without event,A,2499.0,2499.0,no event
+GSM1897004,4s,Henrich,4s,Y,Event,died from disease,D,161.0,209.0,death of disease
+GSM1897006,other,Henrich,3,Y,Event,died from disease,D,98.0,103.0,death of disease
+GSM1897007,4Amp,Henrich,4,Y,Event,died from disease,D,407.0,425.0,death of disease
+GSM1897008,4Noamp,Henrich,4,N,Not,alive without event,A,1356.0,1356.0,no event
+GSM1897009,4Noamp,Henrich,4,N,Not,alive without event,A,995.0,995.0,no event
+GSM1897011,4Noamp,Henrich,4,N,Not,alive without event,A,710.0,710.0,no event
+GSM1897014,4s,Henrich,4s,N,Not,alive without event,A,1998.0,1998.0,no event
+GSM1897015,4Noamp,Henrich,4,N,Event,alive with event,A,86.0,1689.0,relapse/progression
+GSM1897017,other,Henrich,3,Y,Event,died from disease,D,417.0,526.0,death of disease
+GSM1897020,4Amp,Henrich,4,Y,Not,alive without event,A,1239.0,1239.0,no event
+GSM1897021,4Amp,Henrich,4,Y,Event,died from disease,D,454.0,555.0,death of disease
+GSM1897028,4s,Henrich,4s,N,Event,alive with event,A,296.0,2785.0,relapse/progression
+GSM1897029,4Amp,Henrich,4,Y,Not,alive without event,A,1959.0,1959.0,no event
+GSM1897030,4Noamp,Henrich,4,N,Event,alive with event,A,833.0,1475.0,relapse/progression
+GSM1897031,4s,Henrich,4s,N,Not,alive without event,A,3901.0,3901.0,no event
+GSM1897032,4s,Henrich,4s,N,Not,alive without event,A,3571.0,3571.0,no event
+GSM1897033,4Amp,Henrich,4,Y,Event,died from disease,D,326.0,391.0,death of disease
+GSM1897034,4s,Henrich,4s,N,Not,alive without event,A,2724.0,2724.0,no event
+GSM1897035,4Amp,Henrich,4,Y,Event,died from disease,D,363.0,499.0,death of disease
+GSM1897036,4Amp,Henrich,4,Y,Event,died from disease,D,305.0,375.0,death of disease
+GSM1897037,4s,Henrich,4s,N,Not,alive without event,A,3625.0,3625.0,no event
+GSM1897038,4s,Henrich,4s,N,Not,alive without event,A,3493.0,3493.0,no event
+GSM1897039,4Amp,Henrich,4,Y,Event,died from disease,D,201.0,207.0,death of disease
+GSM1897040,4Amp,Henrich,4,Y,Event,died from disease,D,840.0,1191.0,death of disease
+CNB001_TG1,4Noamp,JNB,4,N,,,D,810,1230,relapse/progression
+CNB004_TG1,4Noamp,JNB,4,N,,,D,1440,1860,relapse/progression
+CNB008_TG1,4Noamp,JNB,4,N,,,D,360,810,relapse/progression
+CNB010_TG1,4Noamp,JNB,4,N,,,D,-,270,death of disease
+CNB013_TG1,4Noamp,JNB,4,N,,,D,630,780,relapse/progression
+CNB015_TG1,4Noamp,JNB,4,N,,,D,540,750,relapse/progression
+CNB019_TG1,4Noamp,JNB,4,N,,,A,2640,6330,relapse/progression
+CNB020_TG1,4Noamp,JNB,4,N,,,A,-,4380,?
+CNB021_TG1,4Noamp,JNB,4,N,,,A,-,3180,?
+CNB027_TG1,4Noamp,JNB,4,N,,,A,1740,1740,no event
+CNB030_TG1,other,JNB,3,N,,,A,600,1800,?
+CNB038_TG1,4Noamp,JNB,4,N,,,D,480,540,relapse/progression
+CNB039_TG1,4Noamp,JNB,4,N,,,A,-,2790,?
+CNB041_TG1,4Noamp,JNB,4,N,,,A,-,450,?
+CNB042_TG1,4Noamp,JNB,4,N,,,A,-,3570,?
+B_NB18_TG1,other,JNB,1,N,,,A,5580,5580,no event
+B_NB25_TG1,other,JNB,2,N,,,A,4110,4110,no event
+B_NB26_TG1,4Noamp,JNB,4,N,,,A,-,3540,no event
+B_NB29_TG1,other,JNB,1,N,,,A,-,3420,?
+B_NB38_TG1,4s,JNB,4s,Y,,,D,-,600,relapse/progression
+B_NB39_TG1,4Noamp,JNB,4,N,,,D,570,570,?
+B_NB40_TG1,4Amp,JNB,4,Y,,,A,-,2700,?
+B_NB46_TG1,4Noamp,JNB,4,N,,,D,-,330,?
+B_NB47_TG1,4Noamp,JNB,4,N,,,D,-,450,death of disease
+B_NB51_TG1,4Amp,JNB,4,Y,,,D,420,540,relapse/progression
+B_NB52_TG1,other,JNB,2,N,,,unknown,-,-,?
+B_NB53_TG1,4Amp,JNB,4,Y,,,D,120,450,relapse/progression
+B_NB60_TG1,4s,JNB,4s,N,,,D,-,150,death of disease
+B_NB11_TG1,other,JNB,2,N,,,A,4260,4260,?
+B_NB14_TG1,4Noamp,JNB,4,N,,,A,4260,4260,no event
+CNB047_TG1,other,JNB,3,N,,,A,660,5790,relapse/progression
+CNB050_TG1,4Noamp,JNB,4,N,,,A,2520,3960,relapse/progression
+CNB052_TG1,4Noamp,JNB,4,N,,,A,870,1710,no event
+CNB055_TG1,4Noamp,JNB,4,N,,,A,3870,3870,no event
+CNB059_TG1,4s,JNB,4s,N,,,A,4380,4380,no event
+CNB061_TG1,4Amp,JNB,4,Y,,,A,2550,2550,no event
+CNB075_TG1_GD,4Noamp,JNB,4,N,,,D,900,1320,relapse/progression
+CNB091_TG1_GD,4Noamp,JNB,4,N,,,A,-,2370,?
+CNB099_TG1_GD,other,JNB,2,N,,,A,1140,1860,relapse/progression
+CNB064_TG1_GD,4Noamp,JNB,4,N,,,D,930,1080,relapse/progression
+CNB065_TG1_GD,4Noamp,JNB,4,N,,,D,1410,1410,relapse/progression
+CNB068_TG1_GD,4Noamp,JNB,4,N,,,D,690,900,relapse/progression
+CNB031_TG1,4Noamp,JNB,4,N,,,A,2430,2430,no event
+CNB033_TG1,4Noamp,JNB,4,N,,,D,-,690,death of disease
+CNB035_TG1,4Noamp,JNB,4,N,,,D,240,270,relapse/progression
+B_NB15_TG1,4Amp,JNB,4,Y,,,D,90,600,relapse/progression
+B_NB17_TG1,4Amp,JNB,4,Y,,,D,390,510,relapse/progression
+B_NB21_TG1,other,JNB,3,N,,,D,1860,1830,?
+B_NB22_TG1,4Amp,JNB,4,Y,,,A,-,5730,?
+B_NB23_TG1,4Amp,JNB,4,Y,,,D,-,330,death of disease
+B_NB27_TG1,4Amp,JNB,4,Y,,,D,-,360,death of disease
+B_NB28_TG1,4Noamp,JNB,4,N,,,D,330,780,relapse/progression
+B_NB37_TG1,4Amp,JNB,4,Y,,,D,-,690,death of disease
+B_NB43_TG1,4Amp,JNB,4,Y,,,D,-,360,relapse/progression
+B_NB44_TG1,4Amp,JNB,4,Y,,,A,3840,3840,no event
+B_NB45_TG1,4Amp,JNB,4,Y,,,A,2760,2760,no event
+B_NB48_TG1,4Amp,JNB,4,Y,,,D,600,780,relapse/progression
+B_NB49_TG1,other,JNB,3,N,,,A,3420,3420,no event
+B_NB55_TG1,other,JNB,3,Y,,,D,330,420,relapse/progression
+B_NB64_TG1,4Noamp,JNB,4,N,,,D,-,720,relapse/progression
+B_NB02_TG1,4Amp,JNB,4,Y,,,D,420,450,relapse/progression
+B_NB04_TG1,4Amp,JNB,4,Y,,,A,6450,6450,no event
+B_NB05_TG1,4Amp,JNB,4,Y,,,A,6990,6990,no event
+B_NB07_TG1,other,JNB,3,Y,,,D,930,1290,relapse/progression
+CNB045_TG1,4Noamp,JNB,4,N,,,D,570,1560,relapse/progression
+CNB060_TG1,other,JNB,3,N,,,D,210,480,relapse/progression
+CNB063_TG1,4Noamp,JNB,4,N,,,A,1800,1800,no event
+CNB076_TG1_GD,4s,JNB,4s,N,,,D,1830,4530,relapse/progression
+CNB093_TG1_GD,other,JNB,3,N,,,A,3630,3630,no event
+CNB094_TG1_GD,4Noamp,JNB,4,N,,,A,-,3180,no event
+CNB096_TG1_GD,other,JNB,3,N,,,A,2340,2340,no event
+CNB066_TG1_GD,4Noamp,JNB,4,N,,,D,-,720,death of disease
+CNB069_TG1_GD,other,JNB,2,N,,,D,30,240,relapse/progression
+CNB071_TG1_GD,4Noamp,JNB,4,N,,,D,990,1620,relapse/progression
+CNB074_TG1_GD,other,JNB,3,N,,,D,180,360,relapse/progression
+CNB088_TG1_GD,other,JNB,3,N,,,A,5940,5940,no event
+CNB090_TG1_GD,other,JNB,3,N,,,A,3090,6540,relapse/progression
+CNB081_TG1_GD,4Noamp,JNB,4,N,,,A,2160,2160,no event
+CNB087_TG1_GD,other,JNB,3,N,,,A,4380,4380,no event
+CNB077_TG1_GD,4Noamp,JNB,4,N,,,D,750,750,relapse/progression
+CNB023_TG1,4Noamp,JNB,4,N,,,A,4740,4740,no event
+CNB032_TG1,4Noamp,JNB,4,N,,,A,-,2490,no event
+CNB037_TG1,4Noamp,JNB,4,N,,,D,390,600,relapse/progression
+CNB043_TG1,4Noamp,JNB,4,N,,,A,3540,3540,no event
+B_NB16_TG1,4Noamp,JNB,4,N,,,A,5880,5880,no event
+B_NB19_TG1,other,JNB,2,N,,,A,5190,5190,no event
+B_NB24_TG1,4s,JNB,4s,N,,,A,600,5640,relapse/progression
+B_NB42_TG1,other,JNB,1,N,,,A,4230,4230,no event
+B_NB56_TG1,4s,JNB,4s,N,,,A,1440,1440,no event
+B_NB57_TG1,4s,JNB,4s,N,,,A,1440,1440,no event
+B_NB01_TG1,other,JNB,2,N,,,A,-,4620,?
+B_NB03_TG1,4Noamp,JNB,4,N,,,A,-,2700,?
+B_NB06_TG1,4Noamp,JNB,4,N,,,A,-,2520,?
+B_NB09_TG1,4s,JNB,4s,N,,,D,0,0,?
+CNB046_TG1,4s,JNB,4s,N,,,D,-,90,death of disease
+CNB048_TG1,4s,JNB,4s,N,,,A,-,4140,?
+CNB053_TG1,4Noamp,JNB,4,N,,,A,-,3450,?
+CNB054_TG1,4Noamp,JNB,4,N,,,A,-,2940,?
+CNB056_TG1,4s,JNB,4s,N,,,A,2310,2310,no event
+CNB057_TG1,other,JNB,3,N,,,D,1080,1470,relapse/progression
+CNB058_TG1,4Noamp,JNB,4,N,,,D,60,780,relapse/progression
+CNB062_TG1,4Noamp,JNB,4,N,,,A,-,60,?
+CNB097_TG1_GD,4Noamp,JNB,4,N,,,A,-,3690,?
+CNB098_TG1_GD,other,JNB,3,N,,,A,270,4890,relapse/progression
+CNB089_TG1_GD,4s,JNB,4s,N,,,A,5880,5880,no event
+CNB082_TG1_GD,4Noamp,JNB,4,N,,,D,690,900,relapse/progression
+CNB078_TG1_GD,4Noamp,JNB,4,N,,,D,990,1710,relapse/progression
+CNB084_TG1_GD,4Noamp,JNB,4,N,,,A,1380,1380,no event
+CNB085_TG1_GD,4s,JNB,4s,N,,,A,1080,3450,relapse/progression
+CNB086_TG1_GD,4Noamp,JNB,4,N,,,A,-,4440,?
+CNB002_TG1,4Noamp,JNB,4,N,,,D,2130,3690,relapse/progression
+CNB003_TG1,4Noamp,JNB,4,N,,,D,-,750,death of disease
+CNB005_TG1,4Noamp,JNB,4,N,,,D,900,1050,relapse/progression
+CNB006_TG1,4Noamp,JNB,4,N,,,D,1830,2010,relapse/progression
+CNB007_TG1,other,JNB,3,N,,,D,1110,1080,?
+CNB009_TG1,4Noamp,JNB,4,N,,,D,720,2430,relapse/progression
+CNB011_TG1,4Noamp,JNB,4,N,,,D,570,1380,relapse/progression
+CNB012_TG1,4Noamp,JNB,4,N,,,D,-,690,death of disease
+CNB014_TG1,4Noamp,JNB,4,N,,,D,-,870,relapse/progression
+CNB016_TG1,4Noamp,JNB,4,N,,,D,-,390,relapse/progression
+CNB017_TG1,4Noamp,JNB,4,N,,,D,300,330,relapse/progression
+CNB018_TG1,4Noamp,JNB,4,N,,,D,-,330,death of disease
+CNB022_TG1,4Noamp,JNB,4,N,,,A,5010,5010,no event
+CNB024_TG1,4Noamp,JNB,4,N,,,A,-,2340,?
+CNB025_TG1,other,JNB,3,N,,,A,3780,3780,no event
+CNB026_TG1,4Noamp,JNB,4,N,,,A,3690,3690,no event
+CNB028_TG1,4Noamp,JNB,4,N,,,A,3390,3390,no event
+CNB029_TG1,4Noamp,JNB,4,N,,,A,-,1530,?
+CNB034_TG1,4Noamp,JNB,4,N,,,D,900,1560,relapse/progression
+CNB036_TG1,4Noamp,JNB,4,N,,,D,150,1200,relapse/progression
+CNB040_TG1,4Noamp,JNB,4,N,,,A,4140,4140,no event
+CNB044_TG1,4Noamp,JNB,4,N,,,D,330,810,relapse/progression
+B_NB20_TG1,4Noamp,JNB,4,N,,,D,810,1230,relapse/progression
+B_NB54_TG1,4Noamp,JNB,4,N,,,A,1950,1950,no event
+B_NB08_TG1,4Noamp,JNB,4,N,,,A,-,2640,?
+CNB049_TG1,4Noamp,JNB,4,N,,,D,1170,3570,relapse/progression
+CNB051_TG1,4Noamp,JNB,4,N,,,D,1530,1530,?
+CNB067_TG1_GD,4Noamp,JNB,4,N,,,D,810,1830,relapse/progression
+CNB070_TG1_GD,other,JNB,3,N,,,D,390,450,relapse/progression
+CNB072_TG1_GD,4Noamp,JNB,4,N,,,D,810,1710,relapse/progression
+CNB073_TG1_GD,4Noamp,JNB,4,N,,,D,1020,1320,relapse/progression
+CNB083_TG1_GD,4Noamp,JNB,4,N,,,D,-,1620,relapse/progression
+CNB079_TG1_GD,4Noamp,JNB,4,N,,,D,1020,1110,relapse/progression
+CNB080_TG1_GD,4Noamp,JNB,4,N,,,D,510,750,relapse/progression
+GSM3406971,4Noamp,Ackerman,4,N,Event,death of disease,D,970.0,1401.0,death of disease
+GSM3406972,other,Ackerman,1,Y,Event,death of disease,D,524.0,592.0,death of disease
+GSM3406973,other,Ackerman,1,N,Not,no event,A,,,no event
+GSM3406974,other,Ackerman,1,N,Not,no event,A,3093.0,3093.0,no event
+GSM3406975,4s,Ackerman,4s,N,Not,no event,A,2482.0,2482.0,no event
+GSM3406976,4Noamp,Ackerman,4,N,Event,death of disease,D,645.0,899.0,death of disease
+GSM3406977,4Noamp,Ackerman,4,N,Event,relapse/progression,D,1890.0,2884.0,relapse/progression
+GSM3406978,other,Ackerman,2,N,Not,no event,A,,,no event
+GSM3406979,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3406980,4s,Ackerman,4s,N,Not,no event,A,2103.0,2103.0,no event
+GSM3406981,other,Ackerman,1,N,Not,no event,A,,,no event
+GSM3406982,other,Ackerman,2,N,Not,no event,A,,,no event
+GSM3406983,other,Ackerman,1,N,Not,no event,A,,,no event
+GSM3406984,other,Ackerman,1,Y,Not,no event,A,,,no event
+GSM3406985,4s,Ackerman,4s,N,Not,no event,A,1176.0,1176.0,no event
+GSM3406986,other,Ackerman,2,N,Event,relapse/progression,D,,,relapse/progression
+GSM3406987,4Noamp,Ackerman,4,N,Event,relapse/progression,D,834.0,1380.0,relapse/progression
+GSM3406988,4Amp,Ackerman,4,Y,Event,death of disease,D,623.0,785.0,death of disease
+GSM3406989,4Noamp,Ackerman,4,N,Not,no event,A,,,no event
+GSM3406990,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3406991,4Amp,Ackerman,4,Y,Event,death of disease,D,287.0,663.0,death of disease
+GSM3406992,4Noamp,Ackerman,4,N,Not,no event,A,259.0,259.0,no event
+GSM3406993,4Noamp,Ackerman,4,N,Event,relapse/progression,D,801.0,811.0,relapse/progression
+GSM3406994,4Amp,Ackerman,4,Y,Not,no event,A,232.0,232.0,no event
+GSM3406995,4Noamp,Ackerman,4,N,Event,death of disease,D,,,death of disease
+GSM3406996,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3406997,4Noamp,Ackerman,4,N,Event,relapse/progression,D,371.0,371.0,relapse/progression
+GSM3406998,4Noamp,Ackerman,4,N,Not,no event,A,,,no event
+GSM3406999,other,Ackerman,2,Y,Event,death of disease,D,,,death of disease
+GSM3407000,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407001,4Noamp,Ackerman,4,N,Not,no event,A,,,no event
+GSM3407002,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407003,4Noamp,Ackerman,4,N,Event,death of disease,D,,,death of disease
+GSM3407004,4Noamp,Ackerman,4,N,Not,no event,A,,,no event
+GSM3407005,4Noamp,Ackerman,4,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407006,4Noamp,Ackerman,4,N,Event,death of disease,D,,,death of disease
+GSM3407007,other,Ackerman,2,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407008,other,Ackerman,2,N,Not,no event,A,,,no event
+GSM3407009,other,Ackerman,2,N,Not,no event,A,2509.0,2509.0,no event
+GSM3407010,other,Ackerman,3,N,Event,death of disease,D,,,death of disease
+GSM3407011,other,Ackerman,3,N,Event,death of disease,D,540.0,1120.0,death of disease
+GSM3407012,other,Ackerman,3,N,Not,no event,A,390.0,390.0,no event
+GSM3407013,other,Ackerman,3,Y,Not,no event,A,,,no event
+GSM3407014,4Noamp,Ackerman,4,N,Not,no event,A,2038.0,2038.0,no event
+GSM3407015,4Amp,Ackerman,4,Y,Not,no event,A,,,no event
+GSM3407016,4Amp,Ackerman,4,Y,Event,relapse/progression,D,,,relapse/progression
+GSM3407017,4s,Ackerman,4s,N,Not,no event,A,,,no event
+GSM3407018,4s,Ackerman,4s,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407019,4s,Ackerman,4s,Y,Not,no event,A,2101.0,2101.0,no event
+GSM3407020,4s,Ackerman,4s,Y,Not,no event,A,1679.0,1679.0,no event
+GSM3407021,4s,Ackerman,4s,N,Not,no event,A,,,no event
+GSM3407022,4Amp,Ackerman,4,Y,Event,relapse/progression,D,,,relapse/progression
+GSM3407023,other,Ackerman,2,Y,Event,relapse/progression,D,,,relapse/progression
+GSM3407024,other,Ackerman,1,N,Event,relapse/progression,D,,,relapse/progression
+GSM3407025,4Noamp,Ackerman,4,N,Not,no event,A,268.0,268.0,no event
+GSM3407026,other,Ackerman,3,N,Not,no event,A,,,no event
+GSM3407027,4Amp,Ackerman,4,Y,Not,no event,A,518.0,518.0,no event
+GSM3407028,other,Ackerman,2,Y,Not,no event,A,,,no event

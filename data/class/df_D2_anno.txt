@@ -1,0 +1,32 @@
+,class,dataset,stage,MYCN,event/not,relapse/otherevent/not,alive/death,Event_Free_Survival_Time_in_Days,Overall_Survival_Time_in_Days,FirstEvent,diag_class,diag_age
+TARGET-30-PAKGCI-01A-01D,other,Target,1,N,Not,Censored,A,3723.0,3723.0,no event,0.0,300
+TARGET-30-PALKKV-01A-01D,other,Target,1,N,Not,Censored,A,2613.0,2613.0,no event,0.0,283
+TARGET-30-PALLJJ-01A-01D,other,Target,1,N,Not,Censored,A,3355.0,3355.0,no event,0.0,388
+TARGET-30-PALRIA-01A-01D,other,Target,1,N,Not,Censored,A,4080.0,4080.0,no event,1.0,685
+TARGET-30-PAMAFV-01A-01D,other,Target,1,N,Not,Censored,A,4067.0,4067.0,no event,0.0,303
+TARGET-30-PARZCJ-01A-01D,other,Target,3,N,Not,Censored,A,2435.0,2435.0,no event,0.0,242
+TARGET-30-PASNPG-01A-01D,other,Target,3,N,Event,Event,A,302.0,2274.0,relapse/progression,0.0,318
+TARGET-30-PAUDDK-01A-01D,other,Target,3,N,Event,Event,A,344.0,1528.0,relapse/progression,0.0,361
+GSM1896916,other,Henrich,2.1,N,Not,alive without event,A,3984.0,3984.0,no event,0.0,<1.5 years
+GSM1896918,other,Henrich,1,N,Not,alive without event,A,3013.0,3013.0,no event,0.0,<1.5 years
+GSM1896929,other,Henrich,3,N,Not,alive without event,A,3566.0,3566.0,no event,0.0,<1.5 years
+GSM1896942,other,Henrich,2.2,N,Not,alive without event,A,2310.0,2310.0,no event,0.0,<1.5 years
+GSM1896948,other,Henrich,1,N,Not,alive without event,A,2673.0,2673.0,no event,0.0,<1.5 years
+GSM1896951,other,Henrich,1,N,Not,alive without event,A,2432.0,2432.0,no event,0.0,<1.5 years
+GSM1896954,other,Henrich,3,N,Event,alive with event,A,1128.0,3561.0,relapse/progression,0.0,<1.5 years
+GSM1896956,other,Henrich,2.2,N,Not,alive without event,A,3324.0,3324.0,no event,0.0,<1.5 years
+GSM1896959,other,Henrich,1,N,Not,alive without event,A,2774.0,2774.0,no event,0.0,<1.5 years
+GSM1896968,other,Henrich,3,N,Not,alive without event,A,2375.0,2375.0,no event,0.0,<1.5 years
+GSM1896978,other,Henrich,2.1,N,Not,alive without event,A,2458.0,2458.0,no event,0.0,<1.5 years
+GSM1896985,other,Henrich,3,N,Event,alive with event,A,188.0,1911.0,relapse/progression,0.0,<1.5 years
+GSM1896993,other,Henrich,1,N,Not,alive without event,A,2140.0,2140.0,no event,0.0,<1.5 years
+GSM1896995,other,Henrich,3,N,Event,alive with event,A,74.0,1896.0,relapse/progression,0.0,<1.5 years
+B_NB52_TG1,other,JNB,2,N,,,unknown,-,-,?,0.0,0
+B_NB19_TG1,other,JNB,2,N,,,A,5190,5190,no event,0.0,240
+GSM3406974,other,Ackermann,1,N,Not,no event,A,3093.0,3093.0,no event,0.0,22
+GSM3406978,other,Ackermann,2,N,Not,no event,A,,,no event,0.0,229
+GSM3406983,other,Ackermann,1,N,Not,no event,A,,,no event,0.0,437
+GSM3407008,other,Ackermann,2,N,Not,no event,A,,,no event,0.0,363
+GSM3407009,other,Ackermann,2,N,Not,no event,A,2509.0,2509.0,no event,0.0,300
+GSM3407024,other,Ackermann,1,N,Event,relapse/progression,D,,,relapse/progression,0.0,0
+GSM3407026,other,Ackermann,3,N,Not,no event,A,,,no event,0.0,323
