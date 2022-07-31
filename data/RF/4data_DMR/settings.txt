@@ -1,0 +1,22 @@
+projectdir = /media/sugino/HDD2/project/machine_learning/git/NB_RF/test/
+
+usecpu = 30
+manifest = /media/sugino/data_storage/ussd-ftp.illumina.com/downloads/productfiles/methylationEPIC/MethylationEPIC_v-1-0_B4.csv
+sampleinfo = /media/sugino/HDD2/project/machine_learning/NB_RF/NB_infi_20190717_prog/sample_info/4data_MYCN.csv
+
+datadirloc = /media/sugino/HDD2/project/machine_learning/NB_infi_3101/4dat_Illu_beta/
+datafullpath = 0
+datagz = 1
+merged_data = /media/sugino/HDD2/project/machine_learning/NB_RF/NB_infi_data_310219/data_matrix/4data_DMR.tsv.gz
+
+chromosome = 
+Infinium_Design_Type =　
+CG_island = 
+Phantom5_Enhancers = 
+DMR = +
+450k_Enhancer = 
+DNase_Hypersensitivity_NAME = 
+OpenChromatin_NAME = 
+TFBS_NAME = 
+SNP_ID = 
+

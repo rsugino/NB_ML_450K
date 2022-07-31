@@ -1,0 +1,27 @@
+usecpu = 30
+manifest = /media/sugino/data_storage/ussd-ftp.illumina.com/downloads/productfiles/methylationEPIC/MethylationEPIC_v-1-0_B4.csv
+sampleinfo = /media/sugino/HDD2/project/machine_learning/NB_RF/NB_infi_20190717_prog/sample_info/4data_MYCN.csv
+
+datadirloc = /media/sugino/HDD2/project/machine_learning/NB_RF/NB_infi_3101/4dat_Illu_beta/
+datafullpath = 0
+datagz = 1
+merged_data = /media/sugino/HDD2/project/machine_learning/NB_RF/NB_infi_data_310219/data_matrix/4data_CGI_promoter.tsv.gz
+
+
+chromosome = 
+Infinium_Design_Type =　
+
+##Position of gene: [TSS1500, TSS200, 5'UTR, 3'UTR, 1stExon, Body]
+position_gene = TSS1500, TSS200, 5'UTR, TSS200, 1stExon
+
+##Position of genome including this script [N_Shelf, N_Shore, Island, S_Shore, S_Shelf, OpenSea]
+CG_island = Island
+
+Phantom5_Enhancers = 
+DMR = 
+450k_Enhancer = 
+DNase_Hypersensitivity_NAME = 
+OpenChromatin_NAME = 
+TFBS_NAME = 
+SNP_ID = 
+
