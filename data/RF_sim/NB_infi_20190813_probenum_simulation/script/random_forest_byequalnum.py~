@@ -1,0 +1,226 @@
+#from pylab import *
+import numpy as np
+import time
+import os
+import shutil
+
+import random
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import roc_curve
+
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.tree import export_graphviz
+import subprocess
+
+from multiprocessing import Pool
+from multiprocessing import Process
+import settings
+import methylome_data
+
+import copy
+
+## This script separate train-test dataset by own script without using build-in classifier.
+## This script prepare same number train samples from each dataset, each sampleclass.
+
+class run_random_forest:
+	def __init__(self, settings):
+		start = time.time()
+
+		self.settings = settings
+		self.data_container = self.settings.data_container
+
+		self.settings.result_dir = "result/RF/"
+		self.initialize_data()
+
+		self.out_dir = settings.result_dir+self.chr
+		if os.path.isdir(self.out_dir) is False:
+			os.makedirs(self.out_dir)
+
+		#param_grid = {}
+		# param_grid["max_depth"] = range(2,10)
+		#param_grid["max_depth"] = [2,4,6,8]
+
+		best_result = []
+		importances = []
+		scores = []
+		#f1= open(settings.result_dir+self.chr+"/false_list.tsv","w")
+		#f2=open(settings.result_dir+self.chr+"/true_rate_list.tsv","w")
+
+		for rep in range(0,1):
+			#X_train, X_test, y_train, y_test = train_test_split(self.arr.transpose(),  self.data_container.sample_category)
+			print (rep,"the itaration")
+
+			## それぞれに割り振ったサンプルのlistの場所を取ってくる。
+			train_samples_pos,tune_samples_pos,test_samples_pos = self.data_container.split3()
+			## とってきた場所をもとに、データとカテゴリーをとってくる
+			X_train,y_train,X_tuning,y_tuning,X_test,y_test = self.data_container.data_pickup(train_samples_pos,tune_samples_pos,test_samples_pos)
+
+			##### Random forest: start training #####
+			a = RandomForestClassifier(n_estimators=1000, n_jobs=-1, max_depth=4, oob_score=True, class_weight='balanced')
+			a.fit(X_train, y_train)
+			train_score = a.score(X_train, y_train)
+
+			##### Random forest: start test #####
+			# ----- normal procedure test ------
+			#X_test=np.array(X2_tmp)
+			#
+			#tmp_score = a.score(X_test, y_test)
+			#pred_list = a.predict(X_test)
+			#pred_proba = a.predict_proba(X_test)
+
+			#scores.append(tmp_score)
+
+			#print("train: {:.2f}".format(train_score))
+			#print("test: {:.2f}".format(tmp_score))
+
+			X2_tmp = X_test.tolist()
+			test_name=[self.data_container.sample_name[i] for i in test_samples_pos]
+
+			# ----- one by one procedure test ------
+			labelname= list(self.data_container.sample_loc_bycategory.keys())
+			# labelname=['4Amp','4Noamp','4s','other']
+			label_num=[0 for i in range(len(labelname))]
+			label_true=[0 for i in range(len(labelname))]
+			label_rate=[0 for i in range(len(labelname))]
+
+			tmp_score = a.score(X_test, y_test)
+			pred_list = a.predict(X_test) #予測した結果
+			pred_proba = a.predict_proba(X_test) #各分類群に対しての確率
+
+			y_test_name = [self.data_container.sample_data[self.data_container.sample_name[i]][0] for i in test_samples_pos]
+
+			# for k in y_test_name:
+			# 	self.data_container.sample_tested[k] += 1
+
+			# f3=open(settings.result_dir+self.chr+"/check.tsv","w")
+			# for j in range(len(y_test)):
+			# 	f3.write(y_test_name[j]+"\t"+y_test[j]+"\t"+pred_list[j]+"\t"+str(pred_proba[j])+"\n")
+			# f3.close()
+
+			for j in range(len(y_test)):
+				self.data_container.sample_tested[y_test_name[j]] += 1
+				if y_test[j] == pred_list[j]:
+					self.data_container.sample_correct[y_test_name[j]] += 1
+
+		f3=open(settings.result_dir+self.chr+"/true_count_bysample.tsv","w")
+		for k in (self.data_container.sample_correct):
+			if self.data_container.sample_tested[k]>0:
+				pp1=str(self.data_container.sample_correct[k]/self.data_container.sample_tested[k])
+			else:
+				pp1="NA"
+
+			f3.write(k+"\t"+str(self.data_container.sample_tested[k])+"\t"+str(self.data_container.sample_correct[k])+"\t"+pp1+"\t"+str(self.data_container.sample_data[k])+"\n")
+		f3.close()
+
+
+
+
+	## draw tree
+	def draw_tree(self):
+		print(self.arr.shape,len(self.data_container.sample_category))
+		X_train, X_test, y_train, y_test = train_test_split(self.arr.transpose(),  self.data_container.sample_category)
+		forest = RandomForestClassifier(n_estimators=self.num_tree, max_depth=self.depth,n_jobs=-1, oob_score=True)
+		# forest = RandomForestClassifier(n_estimators=self.num_tree, max_depth=self.depth,n_jobs=-1, oob_score=True, class_weight = "balanced")
+		forest.fit(X_train, y_train)
+
+		for i in range(1,3):
+			filename = self.tree_dir+str(self.num_tree)+"_"+str(self.depth)+"_v"+str(i)+".dot"
+			# print(filename)
+			# print("forest.estimators_[0]",i,forest.estimators_)
+			export_graphviz(forest.estimators_[0], out_file=filename,  class_names=["4Amp", "4Noamp", "4s", "other"], feature_names=self.probename, impurity=False, filled=True)
+#			export_graphviz(forest.estimators_[0], out_file=filename,  class_names=["4Amp", "4Noamp", "4s", "other"], feature_names=self.probename, impurity=False, filled=True)
+			command = "dot -T pdf "+filename+" -o "+filename.replace(str(i)+".dot",str(i)+".pdf")
+			subprocess.call(command, shell=True)
+
+
+	## Initialize variables
+	def initialize_data(self):
+		self.betalist = []
+		self.chr = self.settings.merged_data.split("/")[-1].replace(".tsv","")
+		self.chr = self.settings.merged_data.split("/")[-1].replace(".txt","")
+
+		# random_forest_dir -> result_dir
+		if os.path.isdir(self.settings.result_dir+self.chr) is False:
+			os.makedirs(self.settings.result_dir+self.chr)
+
+		group_num = {}
+		for k in self.data_container.sample_category:
+			if k not in group_num:
+				group_num[k] = 1
+			else:
+				group_num[k] += 1
+
+		sample_num = len(self.data_container.sample_category)
+		# print(group_num)
+		# self.base_Gini = cal_Gini(group_num)
+
+		tmp_key = ""
+		self.probename = self.data_container.probes
+		args_set = []
+		for k in self.data_container.probes_data.keys():
+			if tmp_key == "":
+				tmp_key = k
+			self.betalist.append(self.data_container.probes_data[k])
+
+
+			# if self.args_set == []:
+			# args_set.append([k,self.base_Gini,group_num,self.data_container.sample_name,self.data_container.probes_data[k],self.data_container.sample_category])
+
+		self.make_category()
+
+	#	self.select_top_probe()
+		print(group_num)
+
+		self.arr = np.array(self.betalist)
+		# self.arr = np.array(self.selected)
+
+	## 上位いくつかのprobeのみで解析を行う。
+	def select_top_probe(self):
+		p = Pool(30)
+		self.sort_by_Gini = p.map(Gini_decrement, args_set)
+		p.close()
+
+		self.sort_by_Gini.sort(key = lambda x:x[2])
+
+		top_Gini = []
+		f = open(self.settings.result_dir+self.chr+"Gini.tsv","w")
+		i = 0
+		while i < len(self.sort_by_Gini):
+			k = self.sort_by_Gini[i]
+		# for k in self.sort_by_Gini:
+			f.write(k[0]+"\t"+str(k[1])+"\t"+str(k[2])+"\n")
+			if i < 1000:
+				top_Gini.append(k[0])
+			i += 1
+		f.close()
+
+		## top 1000だけを用いる。
+		self.selected = []
+		for k in top_Gini:
+			if tmp_key == "":
+				tmp_key = k
+			self.selected.append(self.data_container.probes_data[k])
+
+	def make_category(self):
+		for k in self.data_container.sample_mark.keys():
+			self.data_container.sample_mark[k][1] = -0
+
+		for k in self.data_container.sample_info:
+			if k[1] not in self.data_container.sample_mark.keys():
+				self.data_container.sample_mark[k[1]] = [k[1],1,k[2]]
+				continue
+
+			self.data_container.sample_mark[k[1]][1] += 1
+
+	def plot_feature_importances_cancer(self, model):
+		# n_features = cancer.data.shape[1]
+		# plt.barh(range(n_features), model.feature_importances_, align='center')
+		n_features = self.arr.transpose().shape[1]
+		plt.barh(range(n_features), model.feature_importances_, align='center')
+		plt.yticks(np.arange(n_features), self.probename)
+		plt.xlabel("Feature importance")
+		plt.ylabel("Feature")
+		plt.ylim(-1, n_features)

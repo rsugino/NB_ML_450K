@@ -1,0 +1,262 @@
+from pylab import *
+import numpy as np
+import time
+import os
+import shutil
+
+import random
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import roc_curve
+
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.tree import export_graphviz
+import subprocess
+
+from multiprocessing import Pool
+from multiprocessing import Process
+import settings
+
+import copy
+##
+class run_random_forest:
+    def __init__(self, settings):
+        start = time.time()
+
+        self.settings = settings
+        self.settings.result_dir = "/media/sugino/HDD2/project/machine_learning/NB_infi_IIBMP/02_RF/result/RF/"
+        self.initialize_data()
+
+        self.out_dir = settings.result_dir+self.chr
+        if os.path.isdir(self.out_dir) is False:
+            os.makedirs(self.out_dir)
+
+        param_grid = {}
+        # param_grid["max_depth"] = range(2,10)
+        param_grid["max_depth"] = [2,4,6,8]
+
+        best_result = []
+        importances = []
+        scores = []
+        for rep in range(0,100):
+            X_train, X_test, y_train, y_test = train_test_split(self.arr.transpose(),  self.settings.probe_conditions.sample_category)
+
+            grid_search = GridSearchCV(RandomForestClassifier(n_estimators=1000, n_jobs=-1, oob_score=True), param_grid)
+            grid_search.fit(X_train, y_train)
+
+            print("Best parameters: {}".format(grid_search.best_params_))
+            print("Best cross-validation score: {:.2f}".format(grid_search.best_score_))
+
+            tmp_score = grid_search.score(X_test, y_test)
+            print("train: {:.2f}".format(grid_search.score(X_train, y_train)))
+            print("test: {:.2f}".format(tmp_score))
+            # print("train: {:.2f}".format(grid_search.oob_score_))
+
+            tmp = grid_search.best_params_
+            tmp["score"] = tmp_score
+            best_result.append(tmp)
+            scores.append(tmp_score)
+
+            elapsed_time = time.time() - start
+            print (("\tstart figure:{0}".format(elapsed_time)) + "[sec]", rep, "/ 100 for", self.chr)
+
+        res_test = confidence_interval(scores)
+        f = open(settings.result_dir+self.chr+"/sum.tsv","w")
+        for k in best_result:
+            f.write(str(k["max_depth"])+"\t"+str(k["score"])+"\n")
+        f.close()
+
+
+
+
+    ## Generate a random forest.
+    def generate_forest(self):
+        # print (("\telapsed_time:{0}".format(elapsed_time)) + "[sec]")
+        X_train, X_test, y_train, y_test = train_test_split(self.arr.transpose(),  self.settings.probe_conditions.sample_category,  stratify=self.settings.probe_conditions.sample_category)
+
+
+        forest = RandomForestClassifier(n_estimators=self.num_tree, max_depth=self.depth, n_jobs=-1, oob_score=True, class_weight = "balanced")
+        a = forest.fit(X_train, y_train)
+
+        b = []
+        for ia in forest.feature_importances_:
+            if ia != 0:
+                b.append(ia)
+
+        # predicted = a.predict(X_test)
+        # i = 0
+        # score = 0
+        # while i < len(predicted):
+        #     if predicted[i] == y_test[i]:
+        #         score += 1
+        #     print(i,predicted[i],y_test[i],score)
+        #     i += 1
+        # print(self.chr, score, score/len(predicted))
+
+        # print(a.decision_path(X_test))
+        # decision_path = a.decision_path(X_test)
+        # print(decision_path.indicator)
+        # print(decision_path.n_nodes_ptr)
+        # for k in decision_path:
+        #     print(k)
+
+        self.output.append([a.score(X_train, y_train), a.score(X_test, y_test), forest.oob_score_, len(b)])
+
+    ## draw tree
+    def draw_tree(self):
+        print(self.arr.shape,len(self.settings.probe_conditions.sample_category))
+        X_train, X_test, y_train, y_test = train_test_split(self.arr.transpose(),  self.settings.probe_conditions.sample_category)
+        forest = RandomForestClassifier(n_estimators=self.num_tree, max_depth=self.depth,n_jobs=-1, oob_score=True)
+        # forest = RandomForestClassifier(n_estimators=self.num_tree, max_depth=self.depth,n_jobs=-1, oob_score=True, class_weight = "balanced")
+        forest.fit(X_train, y_train)
+
+        for i in range(1,3):
+            filename = self.tree_dir+str(self.num_tree)+"_"+str(self.depth)+"_v"+str(i)+".dot"
+            # print(filename)
+            # print("forest.estimators_[0]",i,forest.estimators_)
+            export_graphviz(forest.estimators_[0], out_file=filename,  class_names=["4Amp", "4Noamp", "4s", "other"], feature_names=self.probename, impurity=False, filled=True)
+#            export_graphviz(forest.estimators_[0], out_file=filename,  class_names=["4Amp", "4Noamp", "4s", "other"], feature_names=self.probename, impurity=False, filled=True)
+            command = "dot -T pdf "+filename+" -o "+filename.replace(str(i)+".dot",str(i)+".pdf")
+            subprocess.call(command, shell=True)
+
+
+    ## Initialize variables
+    def initialize_data(self):
+        self.betalist = []
+        self.chr = self.settings.merged_data.split("/")[-1].replace(".tsv","")
+        self.chr = self.settings.merged_data.split("/")[-1].replace(".txt","")
+
+        # random_forest_dir -> result_dir
+        if os.path.isdir(self.settings.result_dir+self.chr) is False:
+            os.makedirs(self.settings.result_dir+self.chr)
+
+        group_num = {}
+        for k in self.settings.probe_conditions.sample_category:
+            if k not in group_num:
+                group_num[k] = 1
+            else:
+                group_num[k] += 1
+
+        sample_num = len(self.settings.probe_conditions.sample_category)
+        # print(group_num)
+        # self.base_Gini = cal_Gini(group_num)
+
+        tmp_key = ""
+        self.probename = self.settings.probe_conditions.infinium_probes
+        args_set = []
+        for k in self.settings.probe_conditions.infinium_probes_data.keys():
+            if tmp_key == "":
+                tmp_key = k
+            self.betalist.append(self.settings.probe_conditions.infinium_probes_data[k])
+
+            # if self.args_set == []:
+            # args_set.append([k,self.base_Gini,group_num,self.settings.probe_conditions.sample_name,self.settings.probe_conditions.infinium_probes_data[k],self.settings.probe_conditions.sample_category])
+
+        self.make_category()
+
+    #    self.select_top_probe()
+        print(group_num)
+
+        self.arr = np.array(self.betalist)
+        # self.arr = np.array(self.selected)
+
+    ## 上位いくつかのprobeのみで解析を行う。
+    def select_top_probe(self):
+        p = Pool(30)
+        self.sort_by_Gini = p.map(Gini_decrement, args_set)
+        p.close()
+
+        self.sort_by_Gini.sort(key = lambda x:x[2])
+
+        top_Gini = []
+        f = open(self.settings.result_dir+self.chr+"Gini.tsv","w")
+        i = 0
+        while i < len(self.sort_by_Gini):
+            k = self.sort_by_Gini[i]
+        # for k in self.sort_by_Gini:
+            f.write(k[0]+"\t"+str(k[1])+"\t"+str(k[2])+"\n")
+            if i < 1000:
+                top_Gini.append(k[0])
+            i += 1
+        f.close()
+
+        ## top 1000だけを用いる。
+        self.selected = []
+        for k in top_Gini:
+            if tmp_key == "":
+                tmp_key = k
+            self.selected.append(self.settings.probe_conditions.infinium_probes_data[k])
+
+    def make_category(self):
+        for k in self.settings.probe_conditions.sample_mark.keys():
+            self.settings.probe_conditions.sample_mark[k][1] = -0
+
+        for k in self.settings.probe_conditions.sample_info:
+            if k[1] not in self.settings.probe_conditions.sample_mark.keys():
+                self.settings.probe_conditions.sample_mark[k[1]] = [k[1],1,k[2]]
+                continue
+
+            self.settings.probe_conditions.sample_mark[k[1]][1] += 1
+
+    def plot_feature_importances_cancer(self, model):
+        # n_features = cancer.data.shape[1]
+        # plt.barh(range(n_features), model.feature_importances_, align='center')
+        n_features = self.arr.transpose().shape[1]
+        plt.barh(range(n_features), model.feature_importances_, align='center')
+        plt.yticks(np.arange(n_features), self.probename)
+        plt.xlabel("Feature importance")
+        plt.ylabel("Feature")
+        plt.ylim(-1, n_features)
+
+def Gini_decrement(args):
+    [probe,base_Gini,group_num,sample_name,beta_list,sample_category] = args
+
+    datalist = []
+    i = 0
+    while i < len(sample_name):
+        datalist.append([sample_name[i],beta_list[i],sample_category[i]])
+        i += 1
+
+    # print(datalist)
+    datalist.sort(key = lambda x:x[1])
+    # print(datalist)
+
+    left_node = {}
+    right_node = copy.deepcopy(group_num)
+    for k in right_node.keys():
+        left_node[k] = 0
+    for k in datalist:
+        left_node[k[2]] += 1
+        right_node[k[2]] -= 1
+        k.append(cal_Gini(left_node)+cal_Gini(right_node))
+
+    # print(sorted(datalist, key= lambda x:x[3])[0])
+    best_Gini = sorted(datalist, key= lambda x:x[3])[0]
+    # print(best_Gini,group_num)
+    # for k in datalist:
+    #     print("\t",k)
+    # print("\n")
+    return([probe,best_Gini[0],best_Gini[3]])
+    # print(sorted(datalist, key= lambda x:x[1]))
+
+def confidence_interval(values):
+    border = int(len(values)*0.05)
+
+    values = sort(values)
+    arr = np.array(values)
+    return(arr.mean(), arr.var(),values[border],values[len(values)-border-1])
+
+def cal_Gini(group_num):
+    sample_num = 0
+    base_Gini = 0
+    for k in group_num.keys():
+        sample_num += group_num[k]
+        base_Gini += group_num[k]**2
+
+    if sample_num == 0:
+        return(0)
+    else:
+        # print("cal_Gini", sample_num, base_Gini, group_num,1-base_Gini/(sample_num**2))
+        return( (1-base_Gini/(sample_num**2))*sample_num)
