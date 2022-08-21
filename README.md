@@ -19,8 +19,8 @@ git clone https://github.com/tctianchi/pyvenn.git
 
 - data
 
-- ipynb jupyter-noteboook files are located
+- ipynb dir.  jupyter-noteboook files are located on.
 
--- make_450K_data.ipynb merge and separate beta-values matrix file
+- make_450K_data.ipynb merge and separate beta-values matrix file.
 
--- FigX.ipynb and TableX.ipynb made the figure and table.
+- FigX.ipynb and TableX.ipynb made the figure and table.
